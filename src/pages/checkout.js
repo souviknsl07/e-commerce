@@ -8,6 +8,7 @@ import { selectItems, selectTotal } from "../slices/basketSlice";
 import Currency from "react-currency-formatter";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
@@ -32,25 +33,25 @@ const Checkout = () => {
   };
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 dark:bg-amazon_blue-light">
       <Head>
         <title>Checkout</title>
         <link rel="icon" href="/images.png" />
       </Head>
       <Header />
-      <main className="lg:flex max-w-screen-2xl mx-auto">
-        <div className="flex-grow m-5 shadow-sm">
+      <main className="lg:flex max-w-screen-2xl mx-auto dark:bg-amazon_blue-light">
+        <div className="flex-grow m-5 shadow-sm ">
           <Image
             src="https://s3.envato.com/files/173909488/banner_720x300.jpg"
             width={1024}
             height={250}
             objectFit="contain"
           />
-          <div className="flex flex-col p-5 space-y-10 bg-white">
-            <h1 className="text-3xl border-b pb-4">
+          <div className="flex flex-col p-5 space-y-10 bg-white dark:bg-amazon_blue dark:text-white">
+            <h1 className="sm:text-3xl text-lg border-b pb-4">
               {items.length === 0
                 ? "Your Cart is empty"
-                : `You have ${items.length} items in your Cart`}
+                : `You have ${items.length} item(s) in your Cart`}
             </h1>
             {items.length > 0 &&
               items.map((item) => (
@@ -68,7 +69,7 @@ const Checkout = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-white p-10 shadow-md">
+        <div className="flex flex-col bg-white p-10 shadow-md dark:bg-amazon_blue dark:text-white">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
@@ -86,7 +87,7 @@ const Checkout = () => {
                 role="link"
                 disabled={!session}
                 onClick={createCheckoutSession}
-                className={`button mt-2 ${
+                className={`button mt-2 dark:text-black ${
                   !session &&
                   "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
                 }`}
@@ -97,6 +98,8 @@ const Checkout = () => {
           )}
         </div>
       </main>
+      <div className="h-[50vh]" />
+      <Footer />
     </div>
   );
 };

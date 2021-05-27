@@ -31,7 +31,7 @@ const Product = ({ id, title, price, description, category, image }) => {
   };
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-30 p-10 mb-auto">
+    <div className="relative flex flex-col m-5 bg-white z-30 p-10 mb-auto dark:bg-amazon_blue dark:text-white">
       <p className="absolute top-2 right-2 text-xs italic text-gray-400">
         {category}
       </p>
@@ -59,7 +59,10 @@ const Product = ({ id, title, price, description, category, image }) => {
         />
       </div>
 
-      <button onClick={addItemToCart} className="mt-auto button">
+      <button
+        onClick={addItemToCart}
+        className="mt-auto button dark:text-black"
+      >
         Add to Cart
       </button>
     </div>

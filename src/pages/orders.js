@@ -4,17 +4,18 @@ import db from "../../firebase";
 import Header from "../components/Header";
 import moment from "moment";
 import Order from "../components/Order";
+import Footer from "../components/Footer";
 
 const Orders = ({ orders }) => {
   const [session] = useSession();
   return (
-    <div>
+    <div className="dark:bg-amazon_blue-light dark:text-white">
       <Head>
         <title>Your Orders</title>
         <link rel="icon" href="/images.png" />
       </Head>
       <Header />
-      <main className="max-w-screen-lg mx-auto p-10">
+      <main className="max-w-screen-lg mx-auto p-10 dark:bg-amazon_blue-light">
         <h1 className="text-3xl border-b mb-2 pb-1 border-blue-400">
           Your Orders
         </h1>
@@ -25,7 +26,7 @@ const Orders = ({ orders }) => {
           <h2>Please sign in to see your orders</h2>
         )}
 
-        <div className="mt-5 space-y-4">
+        <div className="mt-5 space-y-4 dark:bg-amazon_blue dark:text-white">
           {orders?.map(
             ({ id, amount, amountShipping, items, timestamp, images }) => (
               <Order
@@ -41,6 +42,8 @@ const Orders = ({ orders }) => {
           )}
         </div>
       </main>
+      <div className="h-[50vh]" />
+      <Footer />
     </div>
   );
 };

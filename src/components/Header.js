@@ -1,21 +1,17 @@
 import Image from "next/image";
-import {
-  MenuIcon,
-  SearchIcon,
-  ShoppingCartIcon,
-} from "@heroicons/react/outline";
+import { SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
 import { signIn, signOut, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
 
-const Header = () => {
+const Header = ({ search, setSearch }) => {
   const [session] = useSession();
   const router = useRouter();
   const items = useSelector(selectItems);
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-50 w-full">
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
         <div className="flex items-center flex-grow sm:flex-grow-0">
           <Image
@@ -30,6 +26,8 @@ const Header = () => {
 
         <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-blue-400 hover:bg-blue-500 ml-4">
           <input
+            onChange={(e) => setSearch(e.target.value)}
+            value={search}
             type="search"
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"
           />
@@ -42,8 +40,8 @@ const Header = () => {
             <p className="font-extrabold md:text-sm">Account</p>
           </div>
           <div onClick={() => router.push("/orders")} className="link">
-            <p>Returns</p>
-            <p className="font-extrabold md:text-sm">& Orders</p>
+            <p>Your</p>
+            <p className="font-extrabold md:text-sm">Orders</p>
           </div>
           <div
             onClick={() => router.push("/checkout")}
@@ -62,28 +60,14 @@ const Header = () => {
       <div className="sm:hidden items-center bg-amazon_blue p-1 flex-grow py-2">
         <div className="flex items-center h-10 rounded-md flex-grow cursor-pointer bg-blue-400 hover:bg-blue-500">
           <input
+            onChange={(e) => setSearch(e.target.value)}
+            value={search}
             type="search"
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"
           />
           <SearchIcon className="h-12 p-4" />
         </div>
       </div>
-
-      {/* <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
-        <p className="link flex items-center">
-          <MenuIcon className="h-6 mr-1" />
-          All
-        </p>
-        <p className="link">Prime Video</p>
-        <p className="link">Amazon Business</p>
-        <p className="link">Today's Deals</p>
-        <p className="link hidden lg:inline-flex">Electronics</p>
-        <p className="link hidden lg:inline-flex">Food & Grocery</p>
-        <p className="link hidden lg:inline-flex">Prime</p>
-        <p className="link hidden lg:inline-flex">Buy Again</p>
-        <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
-        <p className="link hidden lg:inline-flex">Health &Personal Care</p>
-      </div> */}
     </header>
   );
 };

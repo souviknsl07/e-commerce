@@ -1,63 +1,53 @@
 import Product from "./Product";
 
-const ProductFeed = ({ products }) => {
+const ProductFeed = ({ products, search, value }) => {
+  const showProducts = (initial, final) => {
+    return value !== ""
+      ? products
+          .filter(
+            (product) =>
+              (product.title.toLowerCase() || product.category).includes(
+                search.toLowerCase()
+              ) && product.category === value
+          )
+          .slice(initial, final)
+          .map(({ id, title, price, description, category, image }) => (
+            <Product
+              key={id}
+              id={id}
+              category={category}
+              price={price}
+              description={description}
+              title={title}
+              image={image}
+            />
+          ))
+      : products
+          .filter((product) =>
+            (product.title.toLowerCase() || product.category).includes(
+              search.toLowerCase()
+            )
+          )
+          .slice(initial, final)
+          .map(({ id, title, price, description, category, image }) => (
+            <Product
+              key={id}
+              id={id}
+              category={category}
+              price={price}
+              description={description}
+              title={title}
+              image={image}
+            />
+          ));
+  };
   return (
     <div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-52 mx-auto">
-      {products
-        .slice(0, 4)
-        .map(({ id, title, price, description, category, image }) => (
-          <Product
-            key={id}
-            id={id}
-            category={category}
-            price={price}
-            description={description}
-            title={title}
-            image={image}
-          />
-        ))}
-      <div className="md:col-span-2">
-        {products
-          .slice(4, 5)
-          .map(({ id, title, price, description, category, image }) => (
-            <Product
-              key={id}
-              id={id}
-              category={category}
-              price={price}
-              description={description}
-              title={title}
-              image={image}
-            />
-          ))}
-      </div>
-      {products
-        .slice(5, products.length - 1)
-        .map(({ id, title, price, description, category, image }) => (
-          <Product
-            key={id}
-            id={id}
-            category={category}
-            price={price}
-            description={description}
-            title={title}
-            image={image}
-          />
-        ))}
-      <div className="md:col-span-3 mb-5">
-        {products
-          .slice(products.length - 1, products.length)
-          .map(({ id, title, price, description, category, image }) => (
-            <Product
-              key={id}
-              id={id}
-              category={category}
-              price={price}
-              description={description}
-              title={title}
-              image={image}
-            />
-          ))}
+      {showProducts(0, 4)}
+      <div className="md:col-span-2">{showProducts(4, 5)}</div>
+      {showProducts(5, products.length - 1)}
+      <div className="md:col-span-3">
+        {showProducts(products.length - 1, products.length)}
       </div>
     </div>
   );
