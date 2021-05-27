@@ -1,0 +1,36 @@
+{
+  "name": "e-commerce-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.1",
+    "@reduxjs/toolkit": "1.5.1",
+    "@stripe/stripe-js": "^1.15.0",
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "axios": "^0.21.1",
+    "firebase": "^8.6.1",
+    "firebase-admin": "^9.8.0",
+    "micro": "^9.3.4",
+    "moment": "^2.29.1",
+    "next": "^10.2.2",
+    "next-auth": "^3.23.3",
+    "raw-body": "^2.4.1",
+    "react": "17.0.2",
+    "react-currency-formatter": "^1.1.0",
+    "react-dom": "17.0.2",
+    "react-redux": "7.2.4",
+    "react-responsive-carousel": "^3.2.18",
+    "stripe": "^8.149.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2"
+  }
+}
