@@ -10,4 +10,12 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+  pages: {
+    signIn: "/signin",
+  },
+  callbacks: {
+    async redirect(url, baseUrl) {
+      return baseUrl;
+    },
+  },
 });

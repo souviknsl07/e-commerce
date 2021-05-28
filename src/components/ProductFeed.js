@@ -42,7 +42,7 @@ const ProductFeed = ({ products, search, value }) => {
           ));
   };
   return (
-    <div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-52 mx-auto">
+    <div className="grid grid-flow-row-dense lg:grid-cols-3 xl:grid-cols-4 md:-mt-52 mx-auto">
       {showProducts(0, 4)}
       <div className="md:col-span-2">{showProducts(4, 5)}</div>
       {showProducts(5, products.length - 1)}
