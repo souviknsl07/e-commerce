@@ -1,4 +1,6 @@
 # E-commerce
+### Preferred Theme = System Theme
+
 ![New Tab - Google Chrome 28-05-2021 23_13_52](https://user-images.githubusercontent.com/53038576/120022750-77613f80-c00a-11eb-9b3b-0b4a9d57b760.png)
 ## Authentication powered by next-auth
 ![Sign In - Google Chrome 29-05-2021 02_29_38](https://user-images.githubusercontent.com/53038576/120041396-c6689e00-c025-11eb-860c-3a30f75e9679.png)
