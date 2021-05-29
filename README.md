@@ -1,4 +1,4 @@
-# [E-commerce]("e-commercebysouvik.vercel.app") - inspired by `amazon`
+# E-commerce - inspired by `amazon`
 ### Preferred Theme = System Theme
 
 ![New Tab - Google Chrome 28-05-2021 23_13_52](https://user-images.githubusercontent.com/53038576/120022750-77613f80-c00a-11eb-9b3b-0b4a9d57b760.png)
@@ -12,6 +12,7 @@
 ![New Tab - Google Chrome 28-05-2021 23_17_14](https://user-images.githubusercontent.com/53038576/120027281-cb6f2280-c010-11eb-9fb0-73bb39d90400.png)
 ## Fully Responsive - light theme using Tailwind CSS
 ![WhatsApp Image 2021-05-29 at 10 42 46 AM](https://user-images.githubusercontent.com/53038576/120063018-bb902680-c082-11eb-9ee7-7dd5274a7c37.jpeg)
+
 
 **To contribute fork the repository and set it up on your local machine.**<br/>
 
