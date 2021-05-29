@@ -11,9 +11,11 @@
 ## Fully Responsive - light theme
 ![WhatsApp Image 2021-05-29 at 10 42 46 AM](https://user-images.githubusercontent.com/53038576/120058802-ebcbcb00-c06a-11eb-8ad4-634be2bb81bf.jpeg)
 
-To contribute fork the repository and set it up on your local machine.
-Follow the steps below.
-`All contributions are gladly welcomed` 😁
+To contribute fork the repository and set it up on your local machine.<br/>
+
+`All kinds of contributions are welcomed` 😁<br/>
+
+* Follow the steps below to install it on your local machine.
 
 # Installation Steps
 
@@ -35,4 +37,4 @@ Run commands
 
 3. `yarn run dev`
 
-`localhost:3000`
+It will run at `localhost:3000`
