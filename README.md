@@ -8,6 +8,8 @@
 ## Payment powered by Stripe
 ![New Tab - Google Chrome 28-05-2021 23_16_53](https://user-images.githubusercontent.com/53038576/120027267-c8743200-c010-11eb-91e0-d051fe01592f.png)
 ![New Tab - Google Chrome 28-05-2021 23_17_14](https://user-images.githubusercontent.com/53038576/120027281-cb6f2280-c010-11eb-9fb0-73bb39d90400.png)
+## Fully Responsive
+![WhatsApp Image 2021-05-29 at 10 42 46 AM](https://user-images.githubusercontent.com/53038576/120058802-ebcbcb00-c06a-11eb-8ad4-634be2bb81bf.jpeg)
 
 # Installation Steps
 
