@@ -15,11 +15,18 @@
 
 `All kinds of contributions are welcomed` 🤝<br/>
 
-* Follow the steps below to install it on your local machine.
+## Prerequisites
+- Have knowledge about Reactjs and Nextjs.
+- Know how tailwind CSS works.
+- Know how to implement firebase firestore.
+- Know how to implement next-auth.
+- Know how to implement stripe along with webhooks.
 
-# Installation Steps
+### Follow the steps below to install it on your local machine.
 
-## Using npm
+## Installation Steps
+
+### Using npm
 
 Run commands
 
@@ -27,7 +34,7 @@ Run commands
 
 2. `npm run dev`
 
-## Or using yarn
+### Or using yarn
 
 Run commands
 
@@ -37,6 +44,6 @@ Run commands
 
 3. `yarn run dev`
 
-It will run at `localhost:3000`
+It will start the development server at `localhost:3000`
 
 Give it a ⭐ if you liked it.
