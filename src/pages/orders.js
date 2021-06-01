@@ -21,7 +21,10 @@ const Orders = ({ orders }) => {
         </h1>
 
         {session ? (
-          <h2>{orders ? orders.length : 0} order(s)</h2>
+          <h2>
+            {orders ? orders.length : 0}{" "}
+            {orders.length === 1 ? "order" : "orders"}
+          </h2>
         ) : (
           <h2>Please sign in to see your orders</h2>
         )}

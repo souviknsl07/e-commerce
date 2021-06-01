@@ -1,25 +1,30 @@
-import { StarIcon } from "@heroicons/react/solid";
+import { PlusSmIcon, StarIcon, MinusSmIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import { useState } from "react";
 import Currency from "react-currency-formatter";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToBasket, removeFromBasket } from "../slices/basketSlice";
+import QuantityCount from "./QuantityCount";
 
 const CheckoutProduct = ({
   id,
   title,
   price,
   description,
+  quantity,
   rating,
   category,
   image,
 }) => {
   const dispatch = useDispatch();
+  const [quantityUp, setQuantityUp] = useState(quantity);
 
   const addItemToCart = () => {
     const product = {
       id,
       title,
       price,
+      quantity,
       description,
       rating,
       category,
@@ -49,17 +54,28 @@ const CheckoutProduct = ({
         <p className="text-xs my-2 line-clamp-3 hover:line-clamp-none cursor-pointer">
           {description}
         </p>
-        <Currency
-          currency="INR"
-          group=","
-          quantity={Math.round(price * 72.91)}
-        />
+        <div className="text-gray-400">
+          <Currency
+            currency="INR"
+            group=","
+            quantity={Math.round(price * 72.91)}
+          />{" "}
+          {" x"} {quantity} {" = "}
+          <Currency
+            currency="INR"
+            group=","
+            quantity={Math.round(price * quantity * 72.91)}
+          />
+        </div>
       </div>
 
       <div className="flex flex-col space-y-2 my-auto justify-self-end dark:text-black">
-        <button onClick={addItemToCart} className="button">
-          Add To Cart
-        </button>
+        <QuantityCount
+          id={id}
+          dispatch
+          setQuantity={setQuantityUp}
+          quantity={quantityUp}
+        />
         <button onClick={removeItemFromCart} className="button">
           Remove from Cart
         </button>

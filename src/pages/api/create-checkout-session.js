@@ -5,7 +5,7 @@ export default async (req, res) => {
 
   const stripeItems = items.map((item) => ({
     description: item.description,
-    quantity: 1,
+    quantity: item.quantity,
     price_data: {
       currency: "inr",
       unit_amount: Math.round(item.price * 72.91 * 100),

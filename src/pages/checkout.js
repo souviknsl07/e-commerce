@@ -4,7 +4,11 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import CheckoutProduct from "../components/CheckoutProduct";
 import Header from "../components/Header";
-import { selectItems, selectTotal } from "../slices/basketSlice";
+import {
+  selectItems,
+  selectTotal,
+  selectTotalItems,
+} from "../slices/basketSlice";
 import Currency from "react-currency-formatter";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
@@ -16,6 +20,7 @@ const stripePromise = loadStripe(process.env.stripe_public_key);
 const Checkout = () => {
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
+  const totalItems = useSelector(selectTotalItems);
   const [session] = useSession();
 
   const createCheckoutSession = async () => {
@@ -61,18 +66,21 @@ const Checkout = () => {
             </div>
 
             {items.length > 0 &&
-              items.map((item) => (
-                <CheckoutProduct
-                  key={item.id}
-                  id={item.id}
-                  title={item.title}
-                  rating={item.rating}
-                  price={item.price}
-                  description={item.description}
-                  category={item.category}
-                  image={item.image}
-                />
-              ))}
+              items.map((item) => {
+                return (
+                  <CheckoutProduct
+                    key={item.id}
+                    id={item.id}
+                    title={item.title}
+                    rating={item.rating}
+                    price={item.price}
+                    quantity={item.quantity}
+                    description={item.description}
+                    category={item.category}
+                    image={item.image}
+                  />
+                );
+              })}
           </div>
         </div>
 
@@ -80,7 +88,7 @@ const Checkout = () => {
           <div className="flex flex-col bg-white p-10 mt-10 lg:m-0 shadow-md dark:bg-amazon_blue dark:text-white">
             <>
               <h2 className="whitespace-nowrap">
-                Subtotal ({items.length} items):{" "}
+                Subtotal ({totalItems} items):{" "}
                 <span className="font-bold">
                   <Currency
                     quantity={Math.round(total * 72.91)}
