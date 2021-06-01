@@ -13,6 +13,7 @@
 ## Fully Responsive - light theme using Tailwind CSS
 ![WhatsApp Image 2021-05-29 at 10 42 46 AM](https://user-images.githubusercontent.com/53038576/120063018-bb902680-c082-11eb-9ee7-7dd5274a7c37.jpeg)
 
+
 **To contribute fork the repository and set it up on your local machine.**<br/>
 
 `All kinds of contributions are welcomed` 🤝<br/>
