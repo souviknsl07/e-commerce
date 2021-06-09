@@ -25,7 +25,7 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/souviknsl07/e-commerce/blob/main/LICENSE)
 
 ## Contributing
 
