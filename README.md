@@ -1,5 +1,5 @@
 # E-commerce - inspired by `amazon`
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/souviknsl07/e-commerce/blob/main/LICENSE)
 ![React](https://img.shields.io/badge/react-v17-blue)
 ![Next](https://img.shields.io/badge/next-v10-yellowgreen)
 ![Tailwind](https://img.shields.io/badge/tailwindcss-v2-lightgreen)
