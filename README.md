@@ -29,7 +29,7 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 
 ## Contributing
 
-**To contribute fork the repository and set it up on your local machine.**<br/>
+**To contribute fork the repository and run it on your local machine.**<br/>
 
 `All kinds of contributions are welcomed` 🤝<br/>
 
@@ -53,7 +53,7 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/souviknsl07/e-commerce.git
 ```
 
 Go to the project directory
@@ -64,20 +64,29 @@ Go to the project directory
 
 Install dependencies
 
+npm
+
 ```bash
   npm install
-    or
+```
+yarn
+
+```bash
   yarn install
 ```
 
 Start the server
 
+npm
+
 ```bash
   npm run start
-    or
+```
+yarn
+
+```bash
   yarn run dev
 ```
-
 
 It will start the development server at `localhost:3000`
 
