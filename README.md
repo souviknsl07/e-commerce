@@ -1,4 +1,11 @@
 # E-commerce - inspired by `amazon`
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+![React](https://img.shields.io/badge/react-v17-blue)
+![Next](https://img.shields.io/badge/next-v10-yellowgreen)
+![Tailwind](https://img.shields.io/badge/tailwindcss-v2-lightgreen)
+![Stripe](https://img.shields.io/badge/stripe-v8-pink)
+![Firebase](https://img.shields.io/badge/firebase-v8-yellow)
+
 This is a fully responsive Full-Stack E-commerce website developed using Nextjs, NextAuth, Tailwind CSS, Firebase, Stripe, etc.
 ## Watch it Live
 [e-commercebysouvik.vercel.app](https://e-commercebysouvik.vercel.app)
@@ -90,4 +97,4 @@ yarn
 
 It will start the development server at `localhost:3000`
 
-Give it a ⭐ if you liked it.
+I will be very much grateful, if you give this repository a ⭐
