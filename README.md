@@ -1,5 +1,4 @@
 # E-commerce - inspired by `amazon`
-### Preferred Theme = System Theme
 
 ![New Tab - Google Chrome 28-05-2021 23_13_52](https://user-images.githubusercontent.com/53038576/120022750-77613f80-c00a-11eb-9b3b-0b4a9d57b760.png)
 ## Authentication powered by next-auth
@@ -13,6 +12,18 @@
 ## Fully Responsive - light theme using Tailwind CSS
 ![WhatsApp Image 2021-05-29 at 10 42 46 AM](https://user-images.githubusercontent.com/53038576/120063018-bb902680-c082-11eb-9ee7-7dd5274a7c37.jpeg)
 
+## Features
+
+- Light/dark mode (according to system theme).
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Contributing
 
 **To contribute fork the repository and set it up on your local machine.**<br/>
 
@@ -24,6 +35,14 @@
 - Know how to implement firebase firestore.
 - Know how to implement next-auth.
 - Know how to implement stripe along with webhooks.
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
 
 ### Follow the steps below to install it on your local machine.
 
