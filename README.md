@@ -1,5 +1,9 @@
 # E-commerce - inspired by `amazon`
+This is a fully responsive Full-Stack E-commerce website developed using Nextjs, NextAuth, Tailwind CSS, Firebase, Stripe, etc.
+## Watch it Live
+[e-commercebysouvik.vercel.app](https://e-commercebysouvik.vercel.app)
 
+## Screenshots
 ![New Tab - Google Chrome 28-05-2021 23_13_52](https://user-images.githubusercontent.com/53038576/120022750-77613f80-c00a-11eb-9b3b-0b4a9d57b760.png)
 ## Authentication powered by next-auth
 ![Sign In - Google Chrome 29-05-2021 02_29_38](https://user-images.githubusercontent.com/53038576/120041396-c6689e00-c025-11eb-860c-3a30f75e9679.png)
@@ -44,27 +48,36 @@ To run this project, you will need to add the following environment variables to
 
 `ANOTHER_API_KEY`
 
-### Follow the steps below to install it on your local machine.
+## Run Locally
 
-## Installation Steps
+Clone the project
 
-### Using npm
+```bash
+  git clone https://link-to-project
+```
 
-Run commands
+Go to the project directory
 
-1. `npm install`
+```bash
+  cd my-project
+```
 
-2. `npm run dev`
+Install dependencies
 
-### Or using yarn
+```bash
+  npm install
+    or
+  yarn install
+```
 
-Run commands
+Start the server
 
-1. `npm install --global yarn`
+```bash
+  npm run start
+    or
+  yarn run dev
+```
 
-2. `yarn install`
-
-3. `yarn run dev`
 
 It will start the development server at `localhost:3000`
 
