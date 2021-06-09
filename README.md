@@ -18,10 +18,10 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 
 ## Features
 
-- Light/dark mode (according to system theme).
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Light/dark mode (according to system theme)
+- Fully Moblie Responsive
+- OAuth authentication
+- Secure Payment using Stripe
 
 ## License
 
