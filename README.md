@@ -51,9 +51,19 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`GOOGLE_ID`
 
-`ANOTHER_API_KEY`
+`GOOGLE_SECRET`
+
+`NEXTAUTH_URL`
+
+`STRIPE_PUBLIC_KEY`
+
+`STRIPE_SECRET_KEY`
+
+`STRIPE_SIGNING_SECRET`
+
+`HOST`
 
 ## Run Locally
 
