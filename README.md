@@ -46,6 +46,7 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 - Know how to implement firebase firestore.
 - Know how to implement next-auth.
 - Know how to implement stripe along with webhooks.
+  
   Any one of them would be sufficient. 
 
 ## Environment Variables
