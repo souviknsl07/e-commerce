@@ -18,7 +18,7 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 ![New Tab - Google Chrome 29-05-2021 00_09_43](https://user-images.githubusercontent.com/53038576/120030450-1db24280-c015-11eb-9a14-de77db3ebad4.png)
 ## Payment powered by Stripe
 ![New Tab - Google Chrome 28-05-2021 23_16_53](https://user-images.githubusercontent.com/53038576/120027267-c8743200-c010-11eb-91e0-d051fe01592f.png)
-## Orders List using webhooks
+## Orders List using Web hooks and Firebase Firestore
 ![New Tab - Google Chrome 28-05-2021 23_17_14](https://user-images.githubusercontent.com/53038576/120027281-cb6f2280-c010-11eb-9fb0-73bb39d90400.png)
 ## Fully Responsive - light theme using Tailwind CSS
 ![WhatsApp Image 2021-05-29 at 10 42 46 AM](https://user-images.githubusercontent.com/53038576/120063018-bb902680-c082-11eb-9ee7-7dd5274a7c37.jpeg)
@@ -46,6 +46,7 @@ This is a fully responsive Full-Stack E-commerce website developed using Nextjs,
 - Know how to implement firebase firestore.
 - Know how to implement next-auth.
 - Know how to implement stripe along with webhooks.
+  Any one of them would be sufficient. 
 
 ## Environment Variables
 
