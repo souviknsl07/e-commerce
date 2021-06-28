@@ -79,7 +79,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd e-commerce
 ```
 
 Install dependencies
