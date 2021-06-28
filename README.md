@@ -6,7 +6,7 @@
 ![Stripe](https://img.shields.io/badge/stripe-v8-pink)
 ![Firebase](https://img.shields.io/badge/firebase-v8-yellow)
 
-This is a fully responsive Full-Stack E-commerce website developed using Nextjs, NextAuth, Tailwind CSS, Firebase, Stripe, etc.
+This is a fully responsive Full-Stack E-commerce web app developed using Nextjs, NextAuth, Tailwind CSS, Firebase, Stripe, etc.
 ## Watch it Live
 [e-commercebysouvik.vercel.app](https://e-commercebysouvik.vercel.app)
 
