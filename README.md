@@ -37,7 +37,7 @@ This is a fully responsive Full-Stack E-commerce web app developed using Nextjs,
 ## Contributing
 
 - Fork the repository
-- [Run on your Local Machine](https://github.com/souviknsl07/e-commerce/blob/main/README.md#run-locally)
+- [Run on your Local Machine](https://github.com/souviknsl07/e-commerce#run-on-your-local-machine)
 
 `All kinds of contributions are welcomed` 🤝<br/>
 
