@@ -36,8 +36,8 @@ This is a fully responsive Full-Stack E-commerce web app developed using Nextjs,
 
 ## Contributing
 
-**To contribute fork the repository, clone it and run it on your local machine.**<br/>
-[Run Locally](https://github.com/souviknsl07/e-commerce/blob/main/README.md#run-locally)
+- Fork the repository
+- [Run on your Local Machine](https://github.com/souviknsl07/e-commerce/blob/main/README.md#run-locally)
 
 `All kinds of contributions are welcomed` 🤝<br/>
 
@@ -68,7 +68,7 @@ To run this project, you will need to add the following environment variables to
 
 `HOST`
 
-## Run Locally
+## Run on your Local Machine
 
 Clone the project
 
