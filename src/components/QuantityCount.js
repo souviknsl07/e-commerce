@@ -32,14 +32,16 @@ const QuantityCount = ({
     <div className="flex justify-center mb-3">
       <button
         onClick={decreaseCount}
-        className="px-2 bg-gradient-to-b text-md from-blue-200 to-blue-400 border border-blue-300 rounded-full border-none focus:outline-none"
+        className="flex justify-center h-7 w-7 bg-gradient-to-b text-md from-blue-200 to-blue-400 border border-blue-300 rounded-full border-none focus:outline-none"
       >
         -
       </button>
-      <span className="bg-gray-200 mx-3 px-2 rounded-full">{quantity}</span>
+      <span className="bg-gray-200 mx-3 flex justify-center h-7 w-7 rounded-full">
+        {quantity}
+      </span>
       <button
         onClick={increaseCount}
-        className="px-2 bg-gradient-to-b text-md from-blue-200 to-blue-400 border border-blue-300 rounded-full border-none focus:outline-none"
+        className="flex justify-center h-7 w-7 bg-gradient-to-b text-md from-blue-200 to-blue-400 border border-blue-300 rounded-full border-none focus:outline-none"
       >
         +
       </button>
