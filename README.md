@@ -68,6 +68,9 @@ To run this project, you will need to add the following environment variables to
 
 `HOST`
 
+## Testing the Payment
+**Keep typing 42 in the card information section.**
+
 ## Run on your Local Machine
 
 Clone the project
