@@ -1,8 +1,9 @@
 import { getSession, useSession } from "next-auth/client";
 import Head from "next/head";
 import db from "../../firebase";
-import Header from "../components/Header";
 import moment from "moment";
+
+import Header from "../components/Header";
 import Order from "../components/Order";
 import Footer from "../components/Footer";
 

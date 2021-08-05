@@ -2,18 +2,19 @@ import { useSession } from "next-auth/client";
 import Head from "next/head";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import CheckoutProduct from "../components/CheckoutProduct";
-import Header from "../components/Header";
+import { ShoppingCartIcon } from "@heroicons/react/outline";
+import Currency from "react-currency-formatter";
+import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
+
 import {
   selectItems,
   selectTotal,
   selectTotalItems,
 } from "../slices/basketSlice";
-import Currency from "react-currency-formatter";
-import { loadStripe } from "@stripe/stripe-js";
-import axios from "axios";
+import Header from "../components/Header";
+import CheckoutProduct from "../components/CheckoutProduct";
 import Footer from "../components/Footer";
-import { ShoppingCartIcon } from "@heroicons/react/outline";
 
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
