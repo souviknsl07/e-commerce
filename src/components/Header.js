@@ -3,7 +3,7 @@ import { SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
 import { signIn, signOut, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-import { selectGroupedItems, selectItems } from "../slices/basketSlice";
+import { selectItems } from "../slices/basketSlice";
 
 const Header = ({ search, setSearch }) => {
   const [session] = useSession();
