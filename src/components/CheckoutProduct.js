@@ -1,9 +1,9 @@
-import { StarIcon } from "@heroicons/react/solid";
+import { PlusSmIcon, StarIcon, MinusSmIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { useState } from "react";
 import Currency from "react-currency-formatter";
-import { useDispatch } from "react-redux";
-import { removeFromBasket } from "../slices/basketSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 import QuantityCount from "./QuantityCount";
 
 const CheckoutProduct = ({
@@ -13,10 +13,26 @@ const CheckoutProduct = ({
   description,
   quantity,
   rating,
+  category,
   image,
 }) => {
   const dispatch = useDispatch();
   const [quantityUp, setQuantityUp] = useState(quantity);
+
+  const addItemToCart = () => {
+    const product = {
+      id,
+      title,
+      price,
+      quantity,
+      description,
+      rating,
+      category,
+      image,
+    };
+
+    dispatch(addToBasket(product));
+  };
 
   const removeItemFromCart = () => {
     // Remove item from redux/ basketSlice

@@ -60,7 +60,7 @@ export const { addToBasket, removeFromBasket, updateQuantity } =
 
 // Selectors - This is how we pull information from the Global store slice
 export const selectItems = (state) => state.basket.items;
-//export const selectGroupedItems = (state) => state.basket.groupedItems;
+export const selectGroupedItems = (state) => state.basket.groupedItems;
 export const selectCount = (state) => state.basket.count;
 export const selectTotal = (state) =>
   state.basket.items.reduce(
