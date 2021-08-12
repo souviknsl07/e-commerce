@@ -1,11 +1,11 @@
 import { buffer } from "micro";
 import * as admin from "firebase-admin";
 
+const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+
 const app = !admin.apps.length
   ? admin.initializeApp({
-      credential: admin.credential.cert(
-        process.env.GOOGLE_APPLICATION_CREDENTIALS
-      ),
+      credential: admin.credential.cert(serviceAccount),
     })
   : admin.app();
 
