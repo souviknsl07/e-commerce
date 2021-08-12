@@ -1,7 +1,6 @@
 import { getSession } from "next-auth/client";
 import Head from "next/head";
 import { useState } from "react";
-
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
