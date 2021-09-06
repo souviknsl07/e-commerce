@@ -8,7 +8,7 @@
 
 This is a fully responsive Full-Stack E-commerce web app developed using Nextjs, NextAuth, Tailwind CSS, Firebase, Stripe, etc.
 ## Watch it Live
-[e-commercebysouvik.vercel.app](https://e-commercebysouvik.vercel.app)
+[www.e-commercebysouvik.store](https://www.e-commercebysouvik.store)
 
 ## Screenshots
 ![New Tab - Google Chrome 28-05-2021 23_13_52](https://user-images.githubusercontent.com/53038576/120022750-77613f80-c00a-11eb-9b3b-0b4a9d57b760.png)
